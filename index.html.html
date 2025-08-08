@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>JPC Asesoría Financiera</title>
+  <meta name="description" content="Consultoría financiera de alto impacto. Estrategia, datos y resultados." />
+  <meta name="theme-color" content="#02140c" />
+  <meta property="og:title" content="JPC Asesoría Financiera" />
+  <meta property="og:description" content="Consultoría financiera innovadora y profesional." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui"] },
+          colors: {
+            bg: "#02140c",
+            glass: "rgba(8,32,20,0.55)",
+            accent: { DEFAULT: "#16a34a", 2: "#22c55e" },
+            muted: "#9fd4be",
+            text: "#f4fdf8"
+          },
+          boxShadow: { glass: "0 10px 40px rgba(0,0,0,.40)" }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Fallback para navegadores sin backdrop-filter */
+    @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))){
+      .supports-glass { background-color: rgba(8,32,20,0.75) !important; }
+    }
+  </style>
+</head>
+<body class="bg-[color:var(--tw-bg,#02140c)] text-[color:var(--tw-text,#f4fdf8)] min-h-screen" style="--tw-bg:#02140c; --tw-text:#f4fdf8;">
+  <!-- Fondo con gradientes sutiles -->
+  <div class="pointer-events-none fixed inset-0 -z-10">
+    <div class="absolute -top-10 -right-10 h-[45vmin] w-[45vmin] rounded-3xl opacity-25" style="background:radial-gradient(closest-side, #22c55e33, transparent)"></div>
+    <div class="absolute top-1/3 left-[-6rem] h-[50vmin] w-[50vmin] rounded-3xl opacity-20" style="background:radial-gradient(closest-side, #16a34a30, transparent)"></div>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <!-- HEADER -->
+    <header class="sticky top-0 z-40 backdrop-blur supports-glass bg-glass/60 border-b border-white/10">
+      <div class="flex items-center justify-between py-3">
+        <a href="#" class="flex items-center gap-3 no-underline text-inherit">
+          <div class="h-16 w-16 sm:h-20 sm:w-20 rounded-2xl bg-gradient-to-br from-accent to-accent-2 grid place-items-center shadow-glass font-extrabold text-xl">JPC</div>
+          <div class="leading-tight">
+            <strong class="block text-base sm:text-lg">JPC Asesoría Financiera</strong>
+            <span class="block text-sm text-[color:var(--tw-muted,#9fd4be)]" style="--tw-muted:#9fd4be">Estrategia • Datos • Ejecución</span>
+          </div>
+        </a>
+        <nav class="hidden sm:flex items-center gap-5 text-[color:var(--tw-muted,#9fd4be)]">
+          <a class="hover:text-accent-2" href="#sobre-mi">Sobre mí</a>
+          <a class="hover:text-accent-2" href="#servicios">Servicios</a>
+          <a class="hover:text-accent-2" href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="relative grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center py-10 md:py-16">
+      <div class="opacity-0 translate-y-4 will-change-transform" data-reveal>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">Consultoría financiera de alto impacto</h1>
+        <p class="mt-3 text-[color:var(--tw-muted,#9fd4be)] text-base sm:text-lg">Soluciones estratégicas, impulsadas por datos, para optimizar decisiones y maximizar resultados. Muy pronto abriré mi agenda.</p>
+        <div class="mt-5">
+          <a href="#contacto" class="inline-flex items-center justify-center rounded-xl bg-gradient-to-br from-accent to-accent-2 px-5 py-3 font-semibold shadow-glass hover:brightness-110 active:translate-y-px transition">Reserva tu lugar</a>
+        </div>
+        <!-- KPIs -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-6">
+          <div class="supports-glass backdrop-blur bg-glass/60 rounded-xl p-4 border border-white/10 text-center shadow-glass opacity-0 translate-y-4" data-reveal>
+            <strong class="block text-3xl text-accent-2"><span class="counter" data-target="2">0</span>+</strong>
+            <span class="text-[color:var(--tw-muted,#9fd4be)]">Años en finanzas corporativas</span>
+          </div>
+          <div class="supports-glass backdrop-blur bg-glass/60 rounded-xl p-4 border border-white/10 text-center shadow-glass opacity-0 translate-y-4" data-reveal>
+            <strong class="block text-3xl text-accent-2"><span class="counter" data-target="12">0</span>+</strong>
+            <span class="text-[color:var(--tw-muted,#9fd4be)]">Proyectos y modelos entregados</span>
+          </div>
+          <div class="supports-glass backdrop-blur bg-glass/60 rounded-xl p-4 border border-white/10 text-center shadow-glass opacity-0 translate-y-4" data-reveal>
+            <strong class="block text-3xl text-accent-2"><span class="counter" data-target="15">0</span>%+</strong>
+            <span class="text-[color:var(--tw-muted,#9fd4be)]">Optimización promedio en Opex</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual -->
+      <div class="relative supports-glass backdrop-blur bg-glass/60 rounded-2xl p-4 border border-white/10 shadow-glass opacity-0 translate-y-4" data-reveal>
+        <div class="absolute -top-6 -right-6 h-28 w-28 rounded-2xl" style="background:radial-gradient(closest-side, #22c55e55, transparent)"></div>
+        <img class="rounded-xl w-full h-auto" src="https://images.unsplash.com/photo-1620207418302-439b387441b0?auto=format&fit=crop&w=900&q=60" alt="Gráficos y datos financieros" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 50vw" />
+      </div>
+
+      <!-- Parallax shapes -->
+      <div class="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
+        <span class="p-shape absolute right-0 -top-8 h-28 w-28 rounded-2xl border border-white/10 supports-glass backdrop-blur" data-speed="0.25" style="background:radial-gradient(closest-side, #22c55e33, transparent)"></span>
+        <span class="p-shape absolute right-10 top-28 h-24 w-24 rounded-2xl border border-white/10 supports-glass backdrop-blur" data-speed="0.4" style="background:radial-gradient(closest-side, #16a34a33, transparent)"></span>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="py-4">
+      <h2 class="text-2xl font-extrabold">Servicios (Próximamente)</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+        <article class="service-card supports-glass backdrop-blur bg-glass/60 rounded-2xl p-5 border border-white/10 shadow-glass opacity-0 translate-y-4" data-reveal>
+          <h3 class="text-accent-2 font-bold mb-1">Planeación & estrategia</h3>
+          <p class="text-[color:var(--tw-muted,#9fd4be)]">OKRs financieros, presupuestos y escenarios para priorizar capital y recursos.</p>
+        </article>
+        <article class="service-card supports-glass backdrop-blur bg-glass/60 rounded-2xl p-5 border border-white/10 shadow-glass opacity-0 translate-y-4" data-reveal>
+          <h3 class="text-accent-2 font-bold mb-1">Modelos & valuación</h3>
+          <p class="text-[color:var(--tw-muted,#9fd4be)]">Modelos FP&A, DCF, sensibilidad, pricing y tableros para decisiones con datos.</p>
+        </article>
+        <article class="service-card supports-glass backdrop-blur bg-glass/60 rounded-2xl p-5 border border-white/10 shadow-glass opacity-0 translate-y-4" data-reveal>
+          <h3 class="text-accent-2 font-bold mb-1">Optimización & KPIs</h3>
+          <p class="text-[color:var(--tw-muted,#9fd4be)]">Eficiencia en Opex/Capex, flujo de caja operativo, unit economics y governance de datos.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="sobre-mi" class="py-6">
+      <h2 class="text-2xl font-extrabold">Sobre mí</h2>
+      <p class="mt-2 text-[color:var(--tw-muted,#9fd4be)]">Soy Juan Pablo Calderón, economista y controller financiero con experiencia en consumo masivo y cadena de suministro. Combino análisis cuantitativo, métricas accionables y sentido práctico para alinear la estrategia con la ejecución.</p>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-6">
+      <h2 class="text-2xl font-extrabold">Contacto</h2>
+      <div class="supports-glass backdrop-blur bg-glass/60 rounded-2xl p-5 border border-white/10 shadow-glass mt-3 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div>
+          <div><strong>Correo:</strong> <a class="underline decoration-accent/40 hover:decoration-accent-2" href="mailto:jp10calderon@gmail.com">jp10calderon@gmail.com</a></div>
+          <div class="mt-1"><strong>LinkedIn:</strong> <a class="underline decoration-accent/40 hover:decoration-accent-2" href="https://www.linkedin.com/in/juan-pablo-calderón-saenz" target="_blank" rel="noopener">juan-pablo-calderón-saenz</a></div>
+        </div>
+        <a href="#servicios" class="inline-flex items-center justify-center rounded-xl bg-gradient-to-br from-accent to-accent-2 px-5 py-3 font-semibold shadow-glass hover:brightness-110 active:translate-y-px transition">Conoce mis servicios</a>
+      </div>
+    </section>
+
+    <footer class="py-10 text-center text-[color:var(--tw-muted,#9fd4be)] border-t border-white/10">
+      <small>© <span id="year"></span> JPC Asesoría Financiera. Todos los derechos reservados.</small>
+    </footer>
+  </div>
+
+  <script>
+    // Año dinámico
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Reveal on scroll + microinteracciones
+    const revealTargets = document.querySelectorAll('[data-reveal]');
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.remove('opacity-0','translate-y-4'); e.target.classList.add('opacity-100','translate-y-0','transition','duration-700'); io.unobserve(e.target);} });
+    }, {threshold: 0.14});
+    revealTargets.forEach(el=> io.observe(el));
+
+    // Counters
+    const counters = document.querySelectorAll('.counter');
+    const ioCount = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(!entry.isIntersecting) return;
+        const el = entry.target; const target = parseFloat(el.dataset.target||'0');
+        const dur=1200; const start=performance.now();
+        const step = (now)=>{ const p=Math.min(1,(now-start)/dur); const val=Math.floor(target*(0.2+0.8*Math.pow(p,0.85))); el.textContent=val; if(p<1) requestAnimationFrame(step); };
+        requestAnimationFrame(step); ioCount.unobserve(el);
+      });
+    },{threshold:0.6});
+    counters.forEach(c=> ioCount.observe(c));
+
+    // Parallax (se desactiva en móviles y reduce motion)
+    const shapes = document.querySelectorAll('.p-shape');
+    const mqMobile = window.matchMedia('(max-width: 768px)');
+    const mqReduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const parallax = ()=>{
+      const y = window.scrollY || window.pageYOffset; shapes.forEach(s=>{ const sp=parseFloat(s.dataset.speed||'0.2'); s.style.transform = `translate3d(0, ${y*sp*0.12}px, 0)`; });
+    };
+    if(!mqMobile.matches && !mqReduce.matches){ window.addEventListener('scroll', parallax, {passive:true}); }
+  </script>
+</body>
+</html>
